@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class CustomerSaving extends Person{
     private String timeSending;
     private double deposits;
@@ -7,7 +10,7 @@ public class CustomerSaving extends Person{
         this.deposits = deposits;
     }
 
-    public CustomerSaving(String name, String id, String phoneNumber, String address, String email, String timeSending, double deposits) {
+    public CustomerSaving(String name, int id, String phoneNumber, String address, String email, String timeSending, double deposits) {
         super(name, id, phoneNumber, address, email);
         this.timeSending = timeSending;
         this.deposits = deposits;
@@ -37,23 +40,4 @@ public class CustomerSaving extends Person{
                 '}';
     }
 
-    @Override
-    public void addNew() {
-
-    }
-
-    @Override
-    public void delete() {
-
-    }
-
-    @Override
-    public void edit() {
-
-    }
-
-    @Override
-    public void seach() {
-
-    }
 }

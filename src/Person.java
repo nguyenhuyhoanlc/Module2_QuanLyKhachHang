@@ -1,6 +1,6 @@
-public abstract class Person {
+public class Person {
     private String name;
-    private String id;
+    private int id;
     private String phoneNumber;
     private String address;
     private String email;
@@ -8,7 +8,7 @@ public abstract class Person {
     public Person() {
     }
 
-    public Person(String name, String id, String phoneNumber, String address, String email) {
+    public Person(String name, int id, String phoneNumber, String address, String email) {
         this.name = name;
         this.id = id;
         this.phoneNumber = phoneNumber;
@@ -24,11 +24,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -56,16 +56,11 @@ public abstract class Person {
         this.email = email;
     }
 
-    public abstract void addNew();
-    public abstract void delete();
-    public abstract void edit();
-    public abstract void seach();
-
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", id='" + id + '\'' +
+                ", id=" + id +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", address='" + address + '\'' +
                 ", email='" + email + '\'' +
