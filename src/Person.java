@@ -1,6 +1,6 @@
 public class Person {
     private String name;
-    private int id;
+    private String id;
     private String phoneNumber;
     private String address;
     private String email;
@@ -8,7 +8,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(String name, int id, String phoneNumber, String address, String email) {
+    public Person(String name, String id, String phoneNumber, String address, String email) {
         this.name = name;
         this.id = id;
         this.phoneNumber = phoneNumber;
@@ -24,13 +24,10 @@ public class Person {
         this.name = name;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
+
 
     public String getPhoneNumber() {
         return phoneNumber;
@@ -54,6 +51,10 @@ public class Person {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getId() {
+        return id;
     }
 
     @Override

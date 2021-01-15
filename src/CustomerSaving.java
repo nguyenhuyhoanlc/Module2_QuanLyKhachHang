@@ -3,14 +3,14 @@ import java.util.List;
 
 public class CustomerSaving extends Person{
     private String timeSending;
-    private double deposits;
+    private String deposits;
 
-    public CustomerSaving(String timeSending, double deposits) {
+    public CustomerSaving(String timeSending, String deposits) {
         this.timeSending = timeSending;
         this.deposits = deposits;
     }
 
-    public CustomerSaving(String name, int id, String phoneNumber, String address, String email, String timeSending, double deposits) {
+    public CustomerSaving(String name, String id, String phoneNumber, String address, String email, String timeSending, String deposits) {
         super(name, id, phoneNumber, address, email);
         this.timeSending = timeSending;
         this.deposits = deposits;
@@ -24,17 +24,18 @@ public class CustomerSaving extends Person{
         this.timeSending = timeSending;
     }
 
-    public double getDeposits() {
+    public String getDeposits() {
         return deposits;
     }
 
-    public void setDeposits(double deposits) {
+    public void setDeposits(String deposits) {
         this.deposits = deposits;
     }
 
     @Override
     public String toString() {
         return "CustomerSaving{" +
+                super.toString() +
                 "timeSending='" + timeSending + '\'' +
                 ", deposits=" + deposits +
                 '}';

@@ -1,34 +1,34 @@
 public class CustomerBorrow extends Person{
-    private int timeBorrow;
-    private double loan;
+    private String timeBorrow;
+    private String loan;
     private String purpose;
 
-    public CustomerBorrow(int timeBorrow, double loan, String purpose) {
+    public CustomerBorrow(String timeBorrow, String loan, String purpose) {
         this.timeBorrow = timeBorrow;
         this.loan = loan;
         this.purpose = purpose;
     }
 
-    public CustomerBorrow(String name, int id, String phoneNumber, String address, String email, int timeBorrow, double loan, String purpose) {
+    public CustomerBorrow(String name, String id, String phoneNumber, String address, String email, String timeBorrow, String loan, String purpose) {
         super(name, id, phoneNumber, address, email);
         this.timeBorrow = timeBorrow;
         this.loan = loan;
         this.purpose = purpose;
     }
 
-    public int getTimeBorrow() {
+    public String getTimeBorrow() {
         return timeBorrow;
     }
 
-    public void setTimeBorrow(int timeBorrow) {
+    public void setTimeBorrow(String timeBorrow) {
         this.timeBorrow = timeBorrow;
     }
 
-    public double getLoan() {
+    public String getLoan() {
         return loan;
     }
 
-    public void setLoan(double loan) {
+    public void setLoan(String loan) {
         this.loan = loan;
     }
 
@@ -43,6 +43,7 @@ public class CustomerBorrow extends Person{
     @Override
     public String toString() {
         return "CustomerBorrow{" +
+                super.toString() +
                 "timeBorrow=" + timeBorrow +
                 ", loan=" + loan +
                 ", purpose='" + purpose + '\'' +

@@ -42,7 +42,7 @@ public class Manager {
         Collections.sort(personList, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
-                if (o1.getId() < o2.getId()){
+                if (Integer.parseInt(o1.getId()) < Integer.parseInt(o2.getId())){
                     return -1;
                 }
                 return 1;
